@@ -201,7 +201,7 @@ function spawnEnemies(){
   }
 
     enemies.push(new Enemy(x, y, radius, color, velocity))
-  }, 1500)
+  }, 200)
 }
 
 let animationId
@@ -263,7 +263,7 @@ function animate() {
           scoreEl.innerHTML = score
 
           gsap.to(enemy, {
-            radius: enemy.radius - 30
+            radius: enemy.radius - 60
           })
           
           setTimeout(() => {
